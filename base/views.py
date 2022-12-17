@@ -9,14 +9,6 @@ from django.contrib.auth.forms import UserCreationForm
 from .models import Room, Topic, Message
 from .forms import RoomForm
 
-# Create your views here.
-
-# rooms = [
-#     {'id':1, 'name': 'Working on project'},
-#     {'id':2, 'name': 'world cup chat'},
-#     {'id':3, 'name': 'python practice'},
-
-# ]
 
 def loginPage(request):
     page = 'login'
@@ -141,3 +133,16 @@ def deleteRoom(request, pk):
         room.delete()
         return redirect('home')
     return render(request, 'base/delete.html', {'obj':room})
+
+
+@login_required(login_url='login')
+def deleteMessage(request, pk):
+    message = Message.objects.get(id=pk)
+
+    if request.user != message.user:
+        return HttpResponse("You cannot delete another user's message")
+        
+    if request.method == 'POST':
+        message.delete()
+        return redirect('home')
+    return render(request, 'base/delete.html', {'obj':message})
