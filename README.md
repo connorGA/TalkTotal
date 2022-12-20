@@ -11,7 +11,7 @@ TalkTotal is chatroom based site built with the Python Django framework reminisc
 
 # Initial Wireframes
 
-
+![](/images/TalkTotal-wireframe.drawio.pdf)
 
 # Installation Instructions
 
