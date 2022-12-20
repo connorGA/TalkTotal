@@ -11,7 +11,8 @@ TalkTotal is chatroom based site built with the Python Django framework reminisc
 
 # Initial Wireframes
 
-![](/images/TalkTotal-wireframe.drawio.pdf)
+![](/images/TalkTotal-wireframe-Page-1.drawio.png)
+![](/images/TalkTotal-wireframe-Page-2.drawio.png)
 
 # Installation Instructions
 
@@ -19,4 +20,4 @@ TalkTotal is chatroom based site built with the Python Django framework reminisc
 
 # Future Goals
 1. I would like to continue building on the user model so that it's easy for users to add a custom profile pic.
-2. Adding some filters to the activity feed, such as only showing messages from rooms you host or have commented in would clean things up a bit.
+2. Adding some filters to the topics, such as only displaying a list of your favorited topics on the home page.
