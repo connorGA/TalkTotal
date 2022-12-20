@@ -3,9 +3,9 @@ TalkTotal is chatroom based site built with the Python Django framework reminisc
 
 
 # Take a Look
-![](/Users/connorcappello/Desktop/general-assembly/unit-4/deliverables/talktotal/Screen Shot 2022-12-20 at 12.32.32 AM.png)
+![](/images/Screen%20Shot%202022-12-20%20at%2012.32.32%20AM.png)
 
-![]()
+![](/images/Screen%20Shot%202022-12-20%20at%2012.32.56%20AM.png)
 
 
 
