@@ -1,17 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
 :root {
-  --color-main: #71c6dd;
-  --color-main-light: #e1f6fb;
-  --color-dark: #3f4156;
-  --color-dark-medium: #51546e;
-  --color-dark-light: #696d97;
+  --color-main: #fbefcc;
+  --color-main-light: #f9ccac;
+  --color-dark: #9b5e35;
+  --color-dark-medium: #674d3c;
+  --color-dark-light: #7d6599;
   --color-light: #e5e5e5;
-  --color-gray: #8b8b8b;
-  --color-light-gray: #b2bdbd;
-  --color-bg: #2d2d39;
+  --color-gray: #b2bdbd;
+  --color-light-gray: #e0876a;
+  --color-bg: #463122;
   --color-success: #5dd693;
   --color-error: #fc4b0b;
+  --color-arrow: #da3e05;
 }
 
 /*========== base styles ==========*/
@@ -371,7 +372,7 @@ a {
 .header__menu svg {
   width: 1.6rem;
   height: 1.6rem;
-  fill: var(--color-dark-light);
+  fill: var(--color-main);
 }
 
 .dropdown-button {
