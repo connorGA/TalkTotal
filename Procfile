@@ -1,0 +1,1 @@
+web: gunicorn talktotal.wsgi --log-file -
