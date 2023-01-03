@@ -10,8 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 import os 
+from os import environ
 from pathlib import Path
-from dotenv import dotenv_values
+from dotenv import load_dotenv, dotenv_values
 
 config = dotenv_values('.env')
 
