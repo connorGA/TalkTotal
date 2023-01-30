@@ -53,6 +53,9 @@ def registerPage(request):
             return redirect('home')
         else:
             messages.error(request, 'An error occured, please try again.')
+            for field, errors in form.errors.items():
+                for error in errors:
+                    messages.error(request, f"{field}: {error}")
 
     return render(request, 'base/login_register.html', {'form': form})
 
