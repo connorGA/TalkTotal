@@ -81,10 +81,10 @@ WSGI_APPLICATION = 'talktotal.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'talktotal',
-        'USER': 'postgres',
-        'PASSWORD': 'password',
-        'HOST': '127.0.0.1',
+        'NAME': 'd847ju214eo017',
+        'USER': 'gxbofciwbodxwd',
+        'PASSWORD': 'bc110e6341b805e8f672cdc2466893b1d131ffeaac70a2afd60b54142b842314',
+        'HOST': 'ec2-3-229-161-70.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
