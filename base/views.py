@@ -53,6 +53,9 @@ def registerPage(request):
             return redirect('home')
         else:
             messages.error(request, 'An error occured, please try again.')
+            for field, errors in form.errors.items():
+                for error in errors:
+                    messages.error(request, f"{field}: {error}")
 
     return render(request, 'base/login_register.html', {'form': form})
 
@@ -73,6 +76,7 @@ def home(request):
     context = { 'rooms': rooms, 'topics': topics, 'room_count': room_count, 'room_messages': room_messages}
     return render(request, 'base/home.html', context)
 
+@login_required(login_url='login')
 def room(request, pk):
     room = Room.objects.get(id=pk)
     room_messages = room.message_set.all()
